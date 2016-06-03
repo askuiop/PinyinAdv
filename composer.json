@@ -1,5 +1,5 @@
 {
-    "name": "askuiop/PinyinAdv",
+    "name": "askuiop/pinyinadv",
     "description": "pinyin",
     "require": {
         "php": "^5.3.3 || ^7.0"
