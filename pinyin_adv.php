@@ -1,5 +1,5 @@
 <?php
-namespace Askuiop;
+namespace pinyinadv;
 
 class PinyinAdv {
 	static $data;
