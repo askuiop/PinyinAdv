@@ -1,10 +1,9 @@
 <?php
-namespace pinyinadv;
+namespace Askuiop\Pinyinadv;
 
 class PinyinAdv {
 	static $data;
 	public function __construct(){
-		parent::__construct();
 	}
 	static function get($hz,$first = false){
 		//echo $hz;
