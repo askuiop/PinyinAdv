@@ -1,6 +1,6 @@
 # PinyinAdv
 
-# 简易的拼音转换...small & fast
+## 简易的拼音转换...small & fast
 
 ## 安装
 使用 Composer 安装:
