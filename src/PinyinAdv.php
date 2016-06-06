@@ -6,15 +6,13 @@ class PinyinAdv {
 	public function __construct(){
 	}
 	static function get($hz,$first = false){
-		//echo $hz;
 		$hz = trim($hz);
 		$len = strlen($hz);
-		//echo 'length:'.$len.'<br>';
+
 		if($len < 3) return $hz;
- 		//echo '<p2>';
+
 		if(empty(self::$data)){
-			//echo '<read!>';
-			$data = file_get_contents('./lib/pinyin_class.txt');
+			$data = file_get_contents(__DIR__.'/../lib/pinyin_class.txt');
 	
 			preg_match_all('/([^:|]+):([a-z]+)/',$data,$hz_py);
 			if(!empty($hz_py)){
@@ -25,14 +23,13 @@ class PinyinAdv {
 			}else{
 				return false;
 			}
-			//print_r(self::$data);
+
 		}else{
 			;
 		}
 		$pinyin = '';
 		$first_py = '';
 		if(preg_match_all('/./u',$hz,$match)){
-			//print_r($match);
 			if(empty($match)){return false;}
 			$match = $match[0];
 			foreach($match as $m){
@@ -50,7 +47,5 @@ class PinyinAdv {
 
 		
 	}
-	
-	
 	
 }

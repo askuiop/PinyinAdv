@@ -1,6 +1,6 @@
 {
     "name": "askuiop/pinyinadv",
-    "description": "pinyin",
+    "description": "hanzi to pinyin",
     "require": {
         "php": "^5.3.3 || ^7.0"
     },
